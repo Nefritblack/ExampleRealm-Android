@@ -2,7 +2,6 @@ package pl.droidsonroids.examplerealm.ui.list
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import io.realm.RealmChangeListener
@@ -29,7 +28,7 @@ class MyListAdapter(private val mBooks: RealmResults<MyBook>) : RecyclerView.Ada
     }
 
     override fun onChange() {
-        notifyDataSetChanged()
+        ///notifyDataSetChanged
     }
 
     inner class ViewHolder(internal var mTextTitle: TextView) : RecyclerView.ViewHolder(mTextTitle)
